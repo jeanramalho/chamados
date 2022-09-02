@@ -8,7 +8,7 @@ function Form() {
         <input type="text" placeholder='Seu nome' />
         <input type="text" placeholder='Título do chamado' />
         <textarea name="descricao" id="" cols="30" rows="10" placeholder='Descreva o chamado...'></textarea>
-        <button type='submit'>Enviar</button>        
+        <button>Enviar</button>        
     </Container>
   );
 }
