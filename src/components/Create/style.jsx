@@ -6,4 +6,6 @@ export const Container = styled.div`
     height: calc(100% - 80px);
     border: 2px solid #fff;
     background: #555;
+    align-items: center;
+    justify-content: center;
 `;
