@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "./components/Header";
-import Create from "./components/Create";
+import List from "./components/List";
 
 import GlobalStyle from "./styles/global";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <Create />
+      <List />
       <GlobalStyle />    
     </>
         
