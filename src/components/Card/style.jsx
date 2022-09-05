@@ -9,6 +9,7 @@ export const Container = styled.div`
     align-items: flex-start;
     padding: 10px;
     border-bottom: 1.5px solid #8888;
+    cursor: pointer;
 
 
    div {
@@ -17,5 +18,9 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-top: 8px;
+   }
+
+   :hover {
+    background: #333;
    }
 `;
