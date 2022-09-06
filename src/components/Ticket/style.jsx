@@ -48,6 +48,7 @@ export const Container = styled.div`
         width: 95%;
         height: 100%;
         border-radius: 8px;
+        padding: 10px 20px;
     }
 
     .content::-webkit-scrollbar {
