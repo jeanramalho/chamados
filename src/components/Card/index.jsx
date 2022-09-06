@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from './style';
 
-function Card() {
+function Card(props) {
   return (
     <Container>
-        <h3>Nome do Chamado</h3>
+        <h3>{props.title}</h3>
         <div>
-            <p>Nome do Criador</p>
-            <span>00/00/0000</span>
+            <p>{props.creater}</p>
+            
         </div>
         
         
