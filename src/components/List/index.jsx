@@ -30,7 +30,7 @@ export default function List() {
       <ul>
       {data.chamados.map(chamado => {
           return (
-            <Card key={chamado.id} title={chamado.title} creater={chamado.creater}/>
+            <Card key={chamado.id} title={chamado.title} creater={chamado.creater} date={new Date(chamado.createdAt)}/>
           )
        })}
       </ul>
