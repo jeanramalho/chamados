@@ -4,7 +4,7 @@ import { format } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 
 function Card(props) {
-  const dateFormat = format(props.date, "dd'/'mm'/'yyyy'", {
+  const dateFormat = format(props.date, "dd'/'MM'/'yyyy'", {
     locale: ptBR    
 })
 
