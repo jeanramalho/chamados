@@ -23,20 +23,28 @@ const getTicketById = gql`
 function Board() {
 
   const { id } = useParams()
-  console.log(typeof(parseInt(id)))
-
-  const { data } = useQuery(getTicketById, {
+  const { loading, error, data } = useQuery(getTicketById, {
     variables: {
       idTask: parseInt(id),
     }
   })
+  if (loading) return <p>Loading ...</p>
 
-  console.log(data)
+  const chamado = data.chamado
 
   return (
     <Container>
         <List />
-        <Ticket key={id} />
+        <Ticket 
+        key={chamado.id}
+        title={chamado.title} 
+        creater={chamado.creater}
+        criticality={chamado.criticality}
+        description={chamado.description}
+        date={new Date(chamado.createdAt)}
+        taskId={chamado.taskId}
+        status={chamado.statusTicket}
+        />
     </Container>
   );
 }
