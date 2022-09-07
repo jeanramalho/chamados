@@ -10,6 +10,8 @@ export const Container = styled.div`
     padding: 10px;
     border-bottom: 1.5px solid #8888;
     cursor: pointer;
+    text-decoration: none !important;
+    color: #fff;
 
 
    div {
@@ -22,5 +24,9 @@ export const Container = styled.div`
 
    :hover {
     background: #333;
+   }
+   
+   .link {
+    text-decoration: none !important;
    }
 `;

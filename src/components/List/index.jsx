@@ -9,6 +9,7 @@ const getTickets = gql`
 query MyQuery {
   chamados {
     id
+    taskId
     title
     creater
     description
@@ -30,7 +31,7 @@ export default function List() {
       <ul>
       {data.chamados.map(chamado => {
           return (
-            <Card key={chamado.id} title={chamado.title} creater={chamado.creater} date={new Date(chamado.createdAt)} description={chamado.description} crit={chamado.criticality} />
+            <Card key={chamado.id} id={chamado.taskId} title={chamado.title} creater={chamado.creater} date={new Date(chamado.createdAt)} description={chamado.description} crit={chamado.criticality} />
           )
        })}
       </ul>

@@ -6,16 +6,17 @@ import { client } from '../lib/apollo'
 
 import Header from "../components/Header";
 
-import Board from "../components/Board"
-
 import GlobalStyle from "../styles/global";
+
+import BoardHome from "../components/BoardHome";
+
 
 
 function Home() {
   return (
      <ApolloProvider client={client}>     
         <Header />
-        <Board />
+        <BoardHome />
         <GlobalStyle />          
     </ ApolloProvider>
     
