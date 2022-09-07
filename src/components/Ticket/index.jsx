@@ -2,7 +2,11 @@ import React from 'react';
 
 import { Container } from './style';
 
-function Ticket() {
+
+
+
+function Ticket(props) {
+
   return (
     <Container>
         <section className='headerInfo'>
