@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from './style'
 import { gql, useQuery } from "@apollo/client"
+import HeaderList from './HeaderList/HeaderList'
 
 
 import Card from '../Card'
@@ -28,10 +29,13 @@ export default function List() {
   return (
     
     <Container>
+      <HeaderList />
       <ul>
       {data.chamados.map(chamado => {
           return (
-            <Card key={chamado.id} id={chamado.taskId} title={chamado.title} creater={chamado.creater} date={new Date(chamado.createdAt)} description={chamado.description} crit={chamado.criticality} />
+            <>
+              <Card key={chamado.id} id={chamado.taskId} title={chamado.title} creater={chamado.creater} date={new Date(chamado.createdAt)} description={chamado.description} crit={chamado.criticality} />
+            </>            
           )
        })}
       </ul>
