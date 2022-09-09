@@ -9,7 +9,7 @@ function HeaderList() {
   return (
         <Container>
             <Link to={`/`} className="link"><h2>chamados</h2></Link>
-            <button>Criar</button>            
+            <Link to={'/create'}><button>Criar</button></Link>         
         </Container>        
   );
 }
