@@ -9,14 +9,19 @@ function Form() {
           <input type="text" placeholder='Seu nome' />
           <input type="text" placeholder='Título do chamado' />
           <textarea name="descricao" id="" cols="30" rows="20" placeholder='Descreva o chamado...'></textarea>
-          <button>Enviar</button>  
+            
        </div>
        <div className="infos">
-          <select name="testando" id="test">
-            <option value="nois">teste 1</option>
-            <option value="nois">teste 3</option>
-            <option value="nois">teste 2</option>
-          </select>
+          <p>
+            Criticidade: 
+            <select name="criticidade" id="crit">
+              <option value="Baixa">Baixa</option>
+              <option value="Media">Média</option>
+              <option value="Alta">Alta</option>
+            </select>
+          </p>
+          
+          <button>Criar Chamado</button>
        </div>
               
     </Container>

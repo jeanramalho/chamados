@@ -19,7 +19,33 @@ export const Container = styled.div`
    .infos {
     width: 30%;
     height: 100%;
-    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 100%;
+      padding: 30px 10px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    select {
+      margin: 10px;
+      width: 50%;
+      height: 30px;
+      background: #444;
+      border-radius: 8px;
+      color: #fff;
+      text-transform: uppercase;
+     }
+
+
    }
 
    input, textarea, button {
@@ -34,6 +60,8 @@ export const Container = styled.div`
    input {
     height: 50px;    
    };
+  
+   
 
    button {
     color: #222;
