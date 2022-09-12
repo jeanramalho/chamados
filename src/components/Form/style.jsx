@@ -16,12 +16,25 @@ export const Container = styled.div`
     align-items: center;
    }
 
+   
    .infos {
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  
+
+    .configs {
+      width: 100%;
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+     }
+  
 
     p {
       width: 100%;
@@ -32,7 +45,6 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      
     }
 
     select {

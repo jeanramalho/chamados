@@ -6,22 +6,26 @@ function Form() {
   return (
     <Container>
        <div className="content">
-          <input type="text" placeholder='Seu nome' />
           <input type="text" placeholder='Título do chamado' />
           <textarea name="descricao" id="" cols="30" rows="20" placeholder='Descreva o chamado...'></textarea>
             
        </div>
        <div className="infos">
-          <p>
-            Criticidade: 
-            <select name="criticidade" id="crit">
-              <option value="Baixa">Baixa</option>
-              <option value="Media">Média</option>
-              <option value="Alta">Alta</option>
-            </select>
-          </p>
+        <div className="configs">
+          <input type="text" placeholder='Seu nome' />
           
-          <button>Criar Chamado</button>
+            <p>
+              Criticidade: 
+              <select name="criticidade" id="crit">
+                <option value="Baixa">Baixa</option>
+                <option value="Media">Média</option>
+                <option value="Alta">Alta</option>
+              </select>
+            </p>
+
+            <button>Criar Chamado</button>
+        </div>
+       
        </div>
               
     </Container>
