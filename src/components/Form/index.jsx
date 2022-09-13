@@ -7,8 +7,10 @@ function Form() {
   function saveData() {
     let title = document.getElementById('title').value
     let description = document.getElementById('description').value
-
-    console.log(`${title} e ${description}`)
+    let creater = document.getElementById('creater').value
+    let crit = document.getElementById('crit').value
+    
+    console.log(`${title} e ${description} e ${creater} e ${crit}`)
   }
 
   return (
@@ -20,7 +22,7 @@ function Form() {
        </div>
        <div className="infos">
         <div className="configs">
-          <input type="text" placeholder='Seu nome' />
+          <input type="text" placeholder='Seu nome' id='creater'/>
           
             <p>
               Criticidade: 
