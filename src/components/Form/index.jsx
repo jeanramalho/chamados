@@ -3,11 +3,19 @@ import React from 'react';
 import { Container } from './style';
 
 function Form() {
+
+  function saveData() {
+    let title = document.getElementById('title').value
+    let description = document.getElementById('description').value
+
+    console.log(`${title} e ${description}`)
+  }
+
   return (
     <Container>
        <div className="content">
-          <input type="text" placeholder='Título do chamado' />
-          <textarea name="descricao" id="" cols="30" rows="20" placeholder='Descreva o chamado...'></textarea>
+          <input type="text" placeholder='Título do chamado' id='title'/>
+          <textarea name="descricao" id="" cols="30" rows="20" placeholder='Descreva o chamado...' id='description'></textarea>
             
        </div>
        <div className="infos">
@@ -23,7 +31,7 @@ function Form() {
               </select>
             </p>
 
-            <button>Criar Chamado</button>
+            <button onClick={saveData}>Criar Chamado</button>
         </div>
        
        </div>
