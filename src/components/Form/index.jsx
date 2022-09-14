@@ -22,6 +22,11 @@ function Form() {
             creater: creat
     }})
 
+    tit = ""
+    desc = ""
+    creat = ""
+    criti = ""
+
     return alert(data)
   }
  
