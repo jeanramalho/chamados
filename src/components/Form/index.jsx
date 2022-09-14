@@ -1,35 +1,40 @@
 import React from 'react';
 import {Container} from './style'
 import { gql, useMutation, useQuery } from '@apollo/client';
-import { createTicket } from './mutation'
+import { createTicket} from './mutation'
 
 
 function Form() {
 
   const [createTick, {data, error, loading}] = useMutation(createTicket)
+  // const [publiTick, {data2, error2, loading2}] = useMutation(publiTicket)
 
   function criaChamados() {
-    const tit = document.getElementById('title').value
-    const desc= document.getElementById('description').value
-    const creat = document.getElementById('creater').value
-    const criti = document.getElementById('crit').value
- 
+    
+    
+    let tit = document.getElementById('title').value
+    let taskId = document.getElementById('taskId').value
+    let desc= document.getElementById('description').value
+    let creat = document.getElementById('creater').value
+    let criti = document.getElementById('crit').value
+  
 
+    
     createTick({variables: {
             title: tit, 
+            taskId: parseInt(taskId),
             description: desc, 
             criticality: criti, 
             creater: creat
     }})
 
-    tit = ""
-    desc = ""
-    creat = ""
-    criti = ""
+   
 
-    return alert(data)
+
+  
+
+    return alert(`${data}`)
   }
- 
 
   
   
@@ -38,6 +43,7 @@ function Form() {
     <Container>
        <div className="content">
           <input type="text" placeholder='Título do chamado' id='title'/>
+          <input type="text" placeholder='ID do chamado'className="taskId" id='taskId'/>
           <textarea name="descricao" cols="30" rows="20" placeholder='Descreva o chamado...' id='description'></textarea>
             
        </div>
