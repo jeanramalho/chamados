@@ -5,13 +5,28 @@ import { createTicket } from './mutation'
 
 
 function Form() {
-  
-  const tit = document.getElementById('title').value
-  const desc= document.getElementById('description').value
-  const creat = document.getElementById('creater').value
-  const criti = document.getElementById('crit').value
 
   const [createTick, {data, error, loading}] = useMutation(createTicket)
+
+  function criaChamados() {
+    const tit = document.getElementById('title').value
+    const desc= document.getElementById('description').value
+    const creat = document.getElementById('creater').value
+    const criti = document.getElementById('crit').value
+ 
+
+    createTick({variables: {
+            title: tit, 
+            description: desc, 
+            criticality: criti, 
+            creater: creat
+    }})
+
+    return alert(data)
+  }
+ 
+
+  
   
 
   return (
@@ -34,7 +49,7 @@ function Form() {
               </select>
             </p>
 
-            <button id='criar'>Criar Chamado</button>
+            <button id='criar' onClick={criaChamados}>Criar Chamado</button>
         </div>
        
        </div>
