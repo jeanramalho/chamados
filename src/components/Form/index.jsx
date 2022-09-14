@@ -1,39 +1,18 @@
 import React from 'react';
 import {Container} from './style'
 import { gql, useMutation, useQuery } from '@apollo/client';
-
-const createTicket = gql`
-      mutation ($title: String!, $description: String!,  $criticality: String!, $creater: String!){
-        createChamado(
-          data: {
-            title: $title, 
-            statusTicket: "Backlog", 
-            description: $description, 
-            criticality: $criticality, 
-            creater: $creater}
-        ) {
-          title
-          statusTicket
-          description
-          criticality
-          creater
-        }
-`
-
-
-    let tit = document.getElementById('title').value
-    let desc= document.getElementById('description').value
-    let creat = document.getElementById('creater').value
-    let criti = document.getElementById('crit').value
-
-
-
-
+import { createTicket } from './mutation'
 
 
 function Form() {
   
-  const  [addTodo, {loading, error, data}]  = useMutation(createTicket)
+  const tit = document.getElementById('title').value
+  const desc= document.getElementById('description').value
+  const creat = document.getElementById('creater').value
+  const criti = document.getElementById('crit').value
+
+  const [createTick, {data, error, loading}] = useMutation(createTicket)
+  
 
   return (
     <Container>
@@ -55,23 +34,7 @@ function Form() {
               </select>
             </p>
 
-            <button id='criar' onClick={e => {
-                addTodo({
-      
-                  variables: {
-                    title: tit,
-                    description: desc,
-                    criticality: criti,
-                    creater: creat,
-                  }
-                               
-              })
-                if (loading) return <p>Loading ...</p>
-                  if (error) return alert(error)
-                  console.log(data)
-              
-                return alert('deu certo')
-            }}>Criar Chamado</button>
+            <button id='criar'>Criar Chamado</button>
         </div>
        
        </div>
