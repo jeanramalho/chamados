@@ -16,8 +16,9 @@ function Form() {
 
   const {loading, error, data} = useQuery(getTaskId)
   const maiorTaskId = data.chamados[0].taskId
+  const idTask = maiorTaskId + 1
 
-  console.log(` maiorO taskId  eh ${JSON.stringify(maiorTaskId)}`)
+
 
   const [createTick, {}] = useMutation(createTicket)
   
@@ -31,11 +32,11 @@ function Form() {
     let creat = document.getElementById('creater').value
     let criti = document.getElementById('crit').value
   
-
+    
     
     createTick({variables: {
             title: tit, 
-            taskId: parseInt(taskId),
+            taskId: idTask,
             description: desc, 
             criticality: criti, 
             creater: creat
@@ -56,7 +57,7 @@ function Form() {
     <Container>
        <div className="content">
           <input type="text" placeholder='Título do chamado' id='title'/>
-          <input type="text" placeholder='ID do chamado'className="taskId" id='taskId'/>
+          <input type="text" placeholder='ID do chamado'className="taskId" id='taskId' value={maiorTaskId + 1}/>
           <textarea name="descricao" cols="30" rows="20" placeholder='Descreva o chamado...' id='description'></textarea>
             
        </div>
