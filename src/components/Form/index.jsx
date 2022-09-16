@@ -7,7 +7,7 @@ import { createTicket} from './mutation'
 function Form() {
 
   const [createTick, {data, error, loading}] = useMutation(createTicket)
-  // const [publiTick, {data2, error2, loading2}] = useMutation(publiTicket)
+  
 
   function criaChamados() {
     

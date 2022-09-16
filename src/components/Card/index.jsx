@@ -9,7 +9,6 @@ function Card(props) {
     locale: ptBR    
 })
 
-console.log(dateFormat)
 
   return (
     <Link to={`/chamado/${props.id}`} className="link">
