@@ -14,6 +14,10 @@ query MyQuery {
 
 function Form() {
 
+  const {loading2, error2, data2} = useQuery(getTaskId)
+
+  console.log(` maiorO taskId  eh ${data2}`)
+
   const [createTick, {data, error, loading}] = useMutation(createTicket)
   
 
