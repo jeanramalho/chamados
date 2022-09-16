@@ -14,11 +14,12 @@ query MyQuery {
 
 function Form() {
 
-  const {loading2, error2, data2} = useQuery(getTaskId)
+  const {loading, error, data} = useQuery(getTaskId)
+  const maiorTaskId = data.chamados[0].taskId
 
-  console.log(` maiorO taskId  eh ${data2}`)
+  console.log(` maiorO taskId  eh ${JSON.stringify(maiorTaskId)}`)
 
-  const [createTick, {data, error, loading}] = useMutation(createTicket)
+  const [createTick, {}] = useMutation(createTicket)
   
 
   function criaChamados() {
@@ -45,7 +46,7 @@ function Form() {
 
   
 
-    return alert(`${data}`)
+    return alert(`Chamado criado com sucesso`)
   }
 
   
