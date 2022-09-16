@@ -3,6 +3,14 @@ import {Container} from './style'
 import { gql, useMutation, useQuery } from '@apollo/client';
 import { createTicket} from './mutation'
 
+const getTaskId = gql`
+query MyQuery {
+  chamados(orderBy: taskId_DESC, first: 1) {
+    taskId
+  }
+}
+`
+
 
 function Form() {
 
