@@ -7,7 +7,7 @@ import  TaskId  from './taksId'
 
 function Form() {
 
-  const [createTick, {data}] = useMutation(createTicket)
+  const [createTick, {}] = useMutation(createTicket)
   
 
   function criaChamados() {
@@ -34,7 +34,7 @@ function Form() {
 
   
 
-    return alert(`${data}`)
+    return alert(`Chamado criado com sucesso! O número do seu chamado é ${id}`)
   }
 
   
