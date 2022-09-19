@@ -7,7 +7,7 @@ import  TaskId  from './taksId'
 
 function Form() {
 
-  const [createTick, {}] = useMutation(createTicket)
+  const [createTick, {data}] = useMutation(createTicket)
   
 
   function criaChamados() {
@@ -15,6 +15,7 @@ function Form() {
     
     let tit = document.getElementById('title').value
     let id = document.getElementById('taskId').value
+    console.log(id)
     let desc= document.getElementById('description').value
     let creat = document.getElementById('creater').value
     let criti = document.getElementById('crit').value
@@ -23,7 +24,7 @@ function Form() {
     
     createTick({variables: {
             title: tit, 
-            taskId: id,
+            // taskId: id,
             description: desc, 
             criticality: criti, 
             creater: creat
@@ -34,7 +35,7 @@ function Form() {
 
   
 
-    return alert(`Chamado criado com sucesso`)
+    return alert(`${data}`)
   }
 
   
