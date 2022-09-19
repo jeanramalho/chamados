@@ -32,9 +32,11 @@ function Form() {
    
 
 
-  
+    document.location.reload()
 
-    return alert(`Chamado criado com sucesso! O número do seu chamado é ${id}`)
+    return  alert(`Chamado criado com sucesso! O número do seu chamado é ${id}`)
+      
+    
   }
 
   
