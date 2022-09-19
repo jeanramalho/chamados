@@ -1,7 +1,8 @@
 import React from 'react';
 import {Container} from './style'
-import { gql, useMutation, useQuery } from '@apollo/client';
+import { useMutation } from '@apollo/client';
 import { createTicket} from './mutation'
+import  TaskId  from './taksId'
 
 
 function Form() {
@@ -13,7 +14,7 @@ function Form() {
     
     
     let tit = document.getElementById('title').value
-    let taskId = document.getElementById('taskId').value
+    let id = document.getElementById('taskId').value
     let desc= document.getElementById('description').value
     let creat = document.getElementById('creater').value
     let criti = document.getElementById('crit').value
@@ -22,7 +23,7 @@ function Form() {
     
     createTick({variables: {
             title: tit, 
-            taskId: taskId,
+            taskId: id,
             description: desc, 
             criticality: criti, 
             creater: creat
@@ -43,7 +44,7 @@ function Form() {
     <Container>
        <div className="content">
           <input type="text" placeholder='Título do chamado' id='title'/>
-          <input type="text" placeholder='ID do chamado'className="taskId" id='taskId'/>
+          <TaskId />
           <textarea name="descricao" cols="30" rows="20" placeholder='Descreva o chamado...' id='description'></textarea>
             
        </div>
