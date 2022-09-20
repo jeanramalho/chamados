@@ -9,7 +9,9 @@ export const Container = styled.div`
     align-items: center;
     text-decoration: none !important;
 
-    .link, h1 {
+    .link {
         text-decoration: none !important;
+        color: #fff;
        }
+
 `;
