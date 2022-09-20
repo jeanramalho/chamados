@@ -7,4 +7,9 @@ export const Container = styled.div`
     color: #FFF;
     display: flex;
     align-items: center;
+    text-decoration: none !important;
+
+    .link, h1 {
+        text-decoration: none !important;
+       }
 `;
