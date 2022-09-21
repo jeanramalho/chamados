@@ -24,7 +24,9 @@ query MyQuery {
 export default function List() {
 
   const  { loading, error, data }  =  useQuery(getTickets)
-  if (loading) return <p>Loading ...</p>
+  if (loading) return  "Loading...."
+
+ 
 
   return (
     
