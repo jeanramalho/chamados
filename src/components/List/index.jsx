@@ -30,8 +30,7 @@ export default function List() {
 
     return   <Card 
   key={key} 
-  title={chamado.title} 
-  creater={carregando} 
+  title={carregando} 
    />}
 
  
