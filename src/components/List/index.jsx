@@ -24,14 +24,10 @@ query MyQuery {
 export default function List() {
 
   const  { loading, error, data }  =  useQuery(getTickets)
-  if (loading) {
-    const key = "key001"
-    const carregando = "Loading..."
+  if (loading)  return  "Loading..."
+    
 
-    return   <Card 
-  key={key} 
-  title={carregando} 
-   />}
+  
 
  
 
