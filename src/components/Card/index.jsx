@@ -13,7 +13,11 @@ function Card(props) {
   return (
     <Link to={`/chamado/${props.id}`} className="link">
       <Container>
-          <h3>{props.title}</h3>
+         <div>
+            <h3>{props.title}</h3>
+            <button>delete</button>
+         </div>
+          
           <div>
               <p>{props.creater}</p>
               <span>{dateFormat}</span>
