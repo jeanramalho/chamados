@@ -68,7 +68,13 @@ export const Container = styled.div`
       .menuBotoes {
         width: 100%;
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .botoes {
+        height: 100%;
+
       }
 
     
