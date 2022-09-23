@@ -72,9 +72,13 @@ export const Container = styled.div`
         align-items: center;
       }
 
+      button {
+        margin-left: 10px;
+      }
+
       .botoes {
         height: 100%;
-
+        width: 15%;
       }
 
     
