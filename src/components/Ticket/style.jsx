@@ -74,11 +74,18 @@ export const Container = styled.div`
 
       button {
         margin-left: 10px;
+        background: #9400D3;
+        width: 45%;
+        height: 100%;
+        color: #fff;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: 550;
       }
 
       .botoes {
-        height: 100%;
-        width: 15%;
+        height: 30px;
+        width: 25%;
       }
 
     
