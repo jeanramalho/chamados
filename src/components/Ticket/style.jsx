@@ -81,6 +81,7 @@ export const Container = styled.div`
         border-radius: 8px;
         text-transform: uppercase;
         font-weight: 550;
+        cursor: pointer;
       }
 
       .botoes {
