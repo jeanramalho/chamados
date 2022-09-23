@@ -14,8 +14,12 @@ function Ticket(props) {
   return (
     <Container>
         <section className='headerInfo'>
-            <div>
+            <div className='menuBotoes'>
                 <h1>{props.title}</h1>
+                <div className="botoes">
+                    <button>Deletar</button>
+                    <button>Editar</button>
+                </div>                
             </div>
             
             <h4>{props.taskId}</h4>

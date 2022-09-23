@@ -65,5 +65,11 @@ export const Container = styled.div`
         border: 3px solid #333;  
       }
 
+      .menuBotoes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between
+      }
+
     
 `;
