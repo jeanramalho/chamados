@@ -30,5 +30,7 @@ export const Container = styled.div`
     text-decoration: none !important;
    }
 
-  
+  button {
+    position: absolute;
+  }
 `;
