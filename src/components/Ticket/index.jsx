@@ -13,7 +13,17 @@ function Ticket(props) {
         locale: ptBR    
     })
 
-    const [deleteTicket, {}] = 
+    const [deleteTicket, {}] = useMutation(deleteChamado)
+
+    function deletarChamado() {
+        deleteTicket(
+            {
+                variables: {
+                    taskId: parseInt(props.taskId)
+                }
+            }
+        )
+    }
 
   return (
     <Container>
