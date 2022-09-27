@@ -12,7 +12,7 @@ function Ticket(props) {
         locale: ptBR    
     })
 
-    const {deleteTicket, {}} = 
+    const [deleteTicket, {}] = 
 
   return (
     <Container>
