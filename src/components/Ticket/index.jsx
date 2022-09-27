@@ -3,6 +3,7 @@ import { format } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { Container } from './style';
 import { useMutation } from '@apollo/client';
+import { deleteChamado } from './mutation';
 
 
 
