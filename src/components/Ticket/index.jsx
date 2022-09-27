@@ -2,6 +2,7 @@ import React from 'react';
 import { format } from 'date-fns' 
 import ptBR from 'date-fns/locale/pt-BR'
 import { Container } from './style';
+import { useMutation } from '@apollo/client';
 
 
 
@@ -10,6 +11,8 @@ function Ticket(props) {
     const dateFormat = format(props.date, "dd'/'MM'/'yyyy'", {
         locale: ptBR    
     })
+
+    const {deleteTicket, {}} = 
 
   return (
     <Container>
