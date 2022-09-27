@@ -23,6 +23,9 @@ function Ticket(props) {
                 }
             }
         )
+
+        document.location.reload()
+        return  alert(`Chamado de numero ${props.taskId} deletado com sucesso!`)
     }
 
   return (
@@ -31,7 +34,7 @@ function Ticket(props) {
             <div className='menuBotoes'>
                 <h1>{props.title}</h1>
                 <div className="botoes">
-                    <button id='del'>Deletar</button>
+                    <button onClick={deletarChamado} id='del'>Deletar</button>
                     <button>Editar</button>
                 </div>                
             </div>
