@@ -19,7 +19,7 @@ function Ticket(props) {
         deleteTicket(
             {
                 variables: {
-                    taskId: parseInt(props.taskId)
+                    idTask: parseInt(props.taskId)
                 }
             }
         )

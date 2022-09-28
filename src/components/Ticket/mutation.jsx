@@ -2,8 +2,8 @@ import React from 'react';
 import { gql, useMutation, useQuery } from '@apollo/client';
 
 export const deleteChamado = gql`
-mutation ($taskId: Int){
-    deleteChamado(where: {taskId: $taskId}) {
+mutation ($idTask: Int){
+    deleteChamado(where: {taskId: $idTask}) {
       id
       taskId
       title
@@ -11,5 +11,5 @@ mutation ($taskId: Int){
       creater
       statusTicket
       criticality
-    }
+    }}
 `
