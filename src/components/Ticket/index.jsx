@@ -24,7 +24,7 @@ function Ticket(props) {
             }
         )
 
-        document.location.reload()
+        
         return  alert(`Chamado de numero ${props.taskId} deletado com sucesso!`)
     }
 
