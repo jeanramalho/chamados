@@ -35,7 +35,7 @@ function Ticket(props) {
                 <h1>{props.title}</h1>
                 <div className="botoes">
                     <button onClick={deletarChamado} id='del'>Deletar</button>
-                    <button>Editar</button>
+                    <button id='edit'>Editar</button>
                 </div>                
             </div>
             
