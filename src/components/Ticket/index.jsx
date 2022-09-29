@@ -4,6 +4,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { Container } from './style';
 import { useMutation } from '@apollo/client';
 import { deleteChamado } from './mutation';
+import { Link } from 'react-router-dom';
 
 
 
@@ -24,7 +25,7 @@ function Ticket(props) {
             }
         )
 
-        
+        <Link to={'/'} ></Link>
         return  alert(`Chamado de numero ${props.taskId} deletado com sucesso!`)
     }
 
