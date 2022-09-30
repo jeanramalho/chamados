@@ -5,7 +5,6 @@ import GlobalStyle from "./styles/global";
 import Router from "./components/Router";
 import { BrowserRouter } from 'react-router-dom'
 
-
 function App() {
 
   return (
