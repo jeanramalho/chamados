@@ -5,7 +5,9 @@ function Modal(){
     
     return (
         <Container>
-            
+            <div className="modalForm">
+                oi
+            </div>
         
         </Container>
     )
