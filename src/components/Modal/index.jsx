@@ -6,7 +6,7 @@ function Modal(){
     return (
         <Container>
             <div className="modalForm">
-                oi
+                <input type="text" id="taskTitle" />
             </div>
         
         </Container>
