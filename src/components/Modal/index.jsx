@@ -9,6 +9,7 @@ function Modal(){
                 <input type="text" id="taskTitle" />
                 <input type="text" id="taskId" />
                 <textarea  id="taskDesc" cols="30" rows="10"></textarea>
+                <input type="text" id="criticidade"/>
             </div>
         
         </Container>
