@@ -15,10 +15,18 @@ function Modal(){
                     <p>ID do Chamado</p>
                     <input type="text" id="taskId" />
                 </div>
+
+                <div>
+                    <p>Criticidade</p>
+                    <input type="text" id="criticidade"/>
+                </div>
+                
+                <div>
+                    <p>Descrição do Chamado</p>
+                    <textarea  id="taskDesc" cols="30" rows="10"></textarea>
+                </div>
                 
                 
-                <textarea  id="taskDesc" cols="30" rows="10"></textarea>
-                <input type="text" id="criticidade"/>
             </div>
         
         </Container>
