@@ -11,11 +11,15 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
 
+
         .modalForm {
             width: 80%;
             height: 80%;
             background: #333;
             border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
 `
