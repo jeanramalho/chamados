@@ -42,7 +42,7 @@ export const Container = styled.div`
         }
 
         .dois {
-            width: 20% !important;
+            width: 25% !important;
         }
 
 `
