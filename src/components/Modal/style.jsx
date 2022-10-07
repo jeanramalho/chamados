@@ -20,6 +20,11 @@ export const Container = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            margin-bottom: 15px;
         }
 
 `
