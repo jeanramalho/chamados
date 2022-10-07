@@ -11,7 +11,7 @@ function Modal(){
                     <input type="text" id="taskTitle" />
                 </div>
 
-                <div className="divContent">
+                <div className="divContentDois">
                     <p>ID do Chamado</p>
                     <input type="text" id="taskId" className="dois"/>
 

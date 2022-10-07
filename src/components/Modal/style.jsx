@@ -23,12 +23,15 @@ export const Container = styled.div`
             flex-direction: column;
         }
 
-        .divContent {
+        .divContent, .divContentDois {
             margin-bottom: 10px;
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+        }
+
+        .divContentDois {
+            justify-content: space-evenly;
         }
 
         input {
@@ -36,6 +39,10 @@ export const Container = styled.div`
             width: 60%;
             height: 35px;
             border-radius: 8px;
+        }
+
+        .dois {
+            width: 20% !important;
         }
 
 `
