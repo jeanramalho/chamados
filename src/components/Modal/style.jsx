@@ -23,8 +23,16 @@ export const Container = styled.div`
             flex-direction: column;
         }
 
+        .divContent {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
         input {
-            margin-bottom: 15px;
+            margin: 7px;
+            width: 60%;
+            height: 35px;
+            border-radius: 8px;
         }
 
 `
