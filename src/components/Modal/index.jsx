@@ -27,7 +27,7 @@ function Modal(){
                 
             </div>
 
-            <button>Salvar</button>
+            <button className="save">Salvar</button>
         
         </Container>
     )
