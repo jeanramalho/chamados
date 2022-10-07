@@ -13,12 +13,10 @@ function Modal(){
 
                 <div className="divContent">
                     <p>ID do Chamado</p>
-                    <input type="text" id="taskId" />
-                </div>
+                    <input type="text" id="taskId" className="dois"/>
 
-                <div className="divContent">
                     <p>Criticidade</p>
-                    <input type="text" id="criticidade"/>
+                    <input type="text" id="criticidade" className="dois"/>
                 </div>
                 
                 <div className="divContent">
