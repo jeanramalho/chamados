@@ -55,7 +55,18 @@ export const Container = styled.div`
         }
 
         .dois {
-            width: 25% !important;
+            width: 20% !important;
+        }
+
+        .tres {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .taskDesc {
+            width: 70%;
+            heigth: 150px;
+
         }
 
 `

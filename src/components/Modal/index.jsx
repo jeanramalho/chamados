@@ -19,9 +19,9 @@ function Modal(){
                     <input type="text" id="criticidade" className="dois"/>
                 </div>
                 
-                <div className="divContent">
+                <div className="divContent tres">
                     <p>Descrição do Chamado</p>
-                    <textarea  id="taskDesc" cols="30" rows="10"></textarea>
+                    <textarea  id="taskDesc" cols="30" rows="10" className="taskDesc"></textarea>
                 </div>
                 
                 
