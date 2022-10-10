@@ -36,7 +36,11 @@ export const Container = styled.div`
         }
 
         .titleTicket {
-            width: 30%;
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            margin-rigth: 10px;
+
         }
 
         input {
