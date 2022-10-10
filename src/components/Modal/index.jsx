@@ -7,8 +7,8 @@ function Modal(){
         <Container>
             <div className="modalForm">
                 <div className="divContent">
-                    <p>Título do Chamado</p>
-                    <input type="text" id="taskTitle" />
+                    <p className="titleTicket">Título do Chamado</p>
+                    <input type="text" id="taskTitle" className="taskTitle" />
                 </div>
 
                 <div className="divContentDois">

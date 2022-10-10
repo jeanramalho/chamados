@@ -35,11 +35,19 @@ export const Container = styled.div`
             justify-content: space-evenly;
         }
 
+        .titleTicket {
+            width: 30%;
+        }
+
         input {
             margin: 7px;
             width: 60%;
             height: 35px;
             border-radius: 8px;
+        }
+
+        .taskTitle {
+            width: 65%;
         }
 
         .dois {
