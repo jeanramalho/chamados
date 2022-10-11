@@ -8,7 +8,7 @@ export const Container = styled.div`
             background-color: rgba(25, 2, 47, 0.2);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            display: none;
+            display: {props.display};
             position: absolute;
             justify-content: center;
             align-items: center;
