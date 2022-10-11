@@ -66,6 +66,7 @@ export const Container = styled.div`
         .taskDesc {
             width: 70%;
             heigth: 150px;
+            border-radius: 8px;
 
         }
 
@@ -75,7 +76,16 @@ export const Container = styled.div`
             justify-content: flex-start;
             margin-left: 130px;
             margin-bottom: 20px;
-            border-radius: 8px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 12pt;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 20px;
         }
 
 `

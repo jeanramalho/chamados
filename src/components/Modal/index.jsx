@@ -24,7 +24,11 @@ function Modal(){
                     <textarea  id="taskDesc" cols="30" rows="10" className="taskDesc"></textarea>
                 </div>
                 
-                <button className="saveButton">Salvar</button>
+                <div className="footer">
+                    <button className="fechar">Fechar</button>
+                    <button className="saveButton">Salvar</button>
+                </div>
+                
             </div>
 
             
