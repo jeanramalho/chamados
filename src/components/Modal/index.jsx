@@ -2,12 +2,14 @@ import React from "react";
 import { Container } from "./style";
 
 function Modal(props){
+
+    let display = "none"
     
     return (
         <Container>
             <div className="mainDiv">
-                
-                <div className="modalForm">
+
+                <div className="modalForm" display={display}>
                     <div className="divContent">
                         <p className="titleTicket">Título do Chamado</p>
                         <input type="text" id="taskTitle" className="taskTitle" />
