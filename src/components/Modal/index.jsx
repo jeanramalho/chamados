@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "./style";
 
-function Modal(){
+function Modal(props){
     
     return (
-        <Container>
+        <Container key={1} display="none">
             <div className="modalForm">
                 <div className="divContent">
                     <p className="titleTicket">Título do Chamado</p>
