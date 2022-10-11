@@ -10,14 +10,13 @@ import GlobalStyle from "../styles/global";
 
 import BoardHome from "../components/BoardHome";
 
-import Modal from "../components/Modal"
+
 
 
 
 function Home() {
   return (
      <ApolloProvider client={client}>   
-        <Modal />  
         <Header />
         <BoardHome />
         <GlobalStyle />          

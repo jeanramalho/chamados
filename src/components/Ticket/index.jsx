@@ -4,7 +4,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { Container } from './style';
 import { useMutation } from '@apollo/client';
 import { deleteChamado } from './mutation';
-
+import  Modal  from '../Modal'
 
 
 
@@ -30,6 +30,7 @@ function Ticket(props) {
 
   return (
     <Container>
+        <Modal />
         <section className='headerInfo'>
             <div className='menuBotoes'>
                 <h1>{props.title}</h1>
