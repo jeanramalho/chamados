@@ -6,6 +6,7 @@ function Modal(props){
     return (
         <Container>
             <div className="mainDiv">
+                
                 <div className="modalForm">
                     <div className="divContent">
                         <p className="titleTicket">Título do Chamado</p>
