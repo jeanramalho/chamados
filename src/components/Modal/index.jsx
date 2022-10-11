@@ -20,14 +20,14 @@ function Modal(){
                 </div>
                 
                 <div className="divContent tres">
-                    <p>Descrição do Chamado</p>
+                    <p className="descTask">Descrição do Chamado</p>
                     <textarea  id="taskDesc" cols="30" rows="10" className="taskDesc"></textarea>
                 </div>
                 
-                
+                <button className="saveButton">Salvar</button>
             </div>
 
-            <button className="saveButton">Salvar</button>
+            
         
         </Container>
     )

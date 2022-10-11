@@ -69,4 +69,13 @@ export const Container = styled.div`
 
         }
 
+        .descTask {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 130px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
 `
