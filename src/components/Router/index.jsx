@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../../pages/Home';
 import TicketPages from '../../pages/TicketPages';
 import CreatePage from '../../pages/CreatePage'
+import Modal from '../../components/Modal'
 
 
 
@@ -12,6 +13,7 @@ function Router() {
         <Route path='/' element={<Home />} />
         <Route path='/chamado/:id' element={<TicketPages />} />
         <Route path='/create' element={<CreatePage />} />
+        <Rout path='/chamado/:id/edit' element={<Modal />} />
     </Routes>
   );
 }
