@@ -13,7 +13,7 @@ function Router() {
         <Route path='/' element={<Home />} />
         <Route path='/chamado/:id' element={<TicketPages />} />
         <Route path='/create' element={<CreatePage />} />
-        <Rout path='/chamado/:id/edit' element={<Modal />} />
+        <Route path='/chamado/:id/edit' element={<Modal />} />
     </Routes>
   );
 }
