@@ -5,13 +5,16 @@ import Header from "../components/Header";
 import GlobalStyle from "../styles/global";
 import Board from "../components/Board"
 import Modal from "../components/Modal"
+import List from "../components/List";
 
 
 function EditPage() {
   return (
      <ApolloProvider client={client}>     
         <Header />
-        <Modal />
+        <Board>
+            <Modal />
+        </Board>        
         <GlobalStyle />          
     </ ApolloProvider>
     
