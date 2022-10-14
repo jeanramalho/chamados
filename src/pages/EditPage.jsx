@@ -12,9 +12,9 @@ function EditPage() {
   return (
      <ApolloProvider client={client}>     
         <Header />
-        <Board>
-            <Modal />
-        </Board>        
+          <Board>
+              <Modal />
+          </Board>        
         <GlobalStyle />          
     </ ApolloProvider>
     

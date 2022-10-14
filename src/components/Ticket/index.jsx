@@ -4,7 +4,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { Container } from './style';
 import { useMutation } from '@apollo/client';
 import { deleteChamado } from './mutation';
-import  Modal  from '../Modal'
+
 
 
 
@@ -28,25 +28,15 @@ function Ticket(props) {
         return  alert(`Chamado de numero ${props.taskId} deletado com sucesso!`)
     }
 
-    function chamaModal() {
-        let display = "none"
-
-      
-
-        return 
-            <Modal key={props.taskId} display={display}/>
-        
-    }
 
   return (
     <Container>
-        <Modal />
         <section className='headerInfo'>
             <div className='menuBotoes'>
                 <h1>{props.title}</h1>
                 <div className="botoes">
                     <button onClick={deletarChamado} id='del'>Deletar</button>
-                    <button id='edit' onClick={chamaModal}>Editar</button>
+                    <button id='edit'>Editar</button>
                 </div>                
             </div>
             
