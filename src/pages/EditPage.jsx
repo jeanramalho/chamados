@@ -4,6 +4,8 @@ import { client } from '../lib/apollo'
 import Header from "../components/Header";
 import GlobalStyle from "../styles/global";
 import Modal from "../components/Modal"
+import List from "../components/List";
+
 
 
 function EditPage() {
@@ -11,6 +13,7 @@ function EditPage() {
      <ApolloProvider client={client}>     
         <Header />
         <Modal />
+        <List />        
         <GlobalStyle />          
     </ ApolloProvider>
     
