@@ -1,18 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
-        .mainDiv {
-            width: 80%;
-            height: 80%;
-            background-color: rgba(25, 2, 47, 0.2);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            width: 77%;
+            height: calc(100% - 80px);
             display: flex;
-            position: absolute;
             justify-content: center;
             align-items: center;
-        }
+            right: 0;
+    
 
         
 

@@ -6,9 +6,7 @@ function Modal(props){
     
     return (
         <Container>
-            <div className="mainDiv">
-
-                <div className="modalForm">
+               <div className="modalForm">
                     <div className="divContent">
                         <p className="titleTicket">Título do Chamado</p>
                         <input type="text" id="taskTitle" className="taskTitle" />
@@ -31,11 +29,9 @@ function Modal(props){
                         <button className="fechar">Fechar</button>
                         <button className="saveButton">Salvar</button>
                     </div>
-                </div>           
+               </div>       
                 
-            </div>
-
-            
+                 
         
         </Container>
     )

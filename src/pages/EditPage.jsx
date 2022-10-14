@@ -12,8 +12,8 @@ function EditPage() {
   return (
      <ApolloProvider client={client}>     
         <Header />
-        <Modal />
-        <List />        
+        <List /> 
+        <Modal />               
         <GlobalStyle />          
     </ ApolloProvider>
     
