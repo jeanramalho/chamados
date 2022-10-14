@@ -4,6 +4,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { Container } from './style';
 import { useMutation } from '@apollo/client';
 import { deleteChamado } from './mutation';
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,7 +37,7 @@ function Ticket(props) {
                 <h1>{props.title}</h1>
                 <div className="botoes">
                     <button onClick={deletarChamado} id='del'>Deletar</button>
-                    <button id='edit'>Editar</button>
+                    <Link to={`/chamado/${props.taskId}/edit`}><button id='edit'>Editar</button></Link>
                 </div>                
             </div>
             
