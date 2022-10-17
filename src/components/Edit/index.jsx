@@ -8,7 +8,7 @@ function Edit(props){
     return (
         <Container>
                 <List />
-               <div className="modalForm">
+               <div className="editForm">
                
                </div>       
                 
