@@ -3,7 +3,7 @@ import { ApolloProvider } from '@apollo/client'
 import { client } from '../lib/apollo'
 import Header from "../components/Header";
 import GlobalStyle from "../styles/global";
-import Modal from "../components/Modal"
+import Edit from "../components/Edit"
 
 
 
@@ -11,7 +11,7 @@ function EditPage() {
   return (
      <ApolloProvider client={client}>     
         <Header />
-        <Modal />               
+        <Edit />               
         <GlobalStyle />          
     </ ApolloProvider>
     

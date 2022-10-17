@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "./style";
 import List from "../List"
 
-function Modal(props){
+function Edit(props){
 
     
     return (
@@ -18,4 +18,4 @@ function Modal(props){
     )
 }
 
-export default Modal
+export default Edit
