@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-            width: 77%;
-            height: calc(100% - 80px);
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
-            left: 0;            
+            align-items: center;            
 
         .modalForm {
             width: 80%;
