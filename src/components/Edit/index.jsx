@@ -10,6 +10,7 @@ function Edit(props){
                 <List />
                <div className="editForm">
                     <input type="text" className="titleTask" />
+                    <input type="text" className="idTask" />
                </div>       
                 
                  
