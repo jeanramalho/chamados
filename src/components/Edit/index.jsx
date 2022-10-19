@@ -9,7 +9,7 @@ function Edit(props){
         <Container>
                 <List />
                <div className="editForm">
-               
+                    <input type="text" className="titleTask" />
                </div>       
                 
                  
