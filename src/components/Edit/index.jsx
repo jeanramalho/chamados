@@ -11,6 +11,7 @@ function Edit(props){
                <div className="editForm">
                     <input type="text" className="titleTask" />
                     <input type="text" className="idTask" />
+                    <select name="criticidade" id="" className="critTask"></select>
                </div>       
                 
                  
