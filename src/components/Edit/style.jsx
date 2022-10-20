@@ -9,7 +9,13 @@ export const Container = styled.div`
                 width: 100%;
                 height: 100%;
                 background: #333;
-             }     
+             }   
+             
+             input {
+               width: 40%;
+               height: 40px;
+               
+             }
 
 
 `
