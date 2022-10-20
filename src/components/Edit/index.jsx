@@ -10,12 +10,15 @@ function Edit(props){
                 <List />
                <div className="editForm">
                     <input type="text" className="titleTask" />
-                    <input type="text" className="idTask" />
-                    <select name="criticidade" id="" className="critTask">
-                        <option value="Alta">Alta</option>
-                        <option value="Media">Media</option>
-                        <option value="Baixa">Baixa</option>
-                    </select>
+                    <div>
+                        <input type="text" className="idTask" />
+                        <select name="criticidade" id="" className="critTask">
+                            <option value="Alta">Alta</option>
+                            <option value="Media">Media</option>
+                            <option value="Baixa">Baixa</option>
+                        </select>
+                    </div>
+                   
                </div>       
                 
                  
