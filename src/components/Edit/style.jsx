@@ -15,7 +15,7 @@ export const Container = styled.div`
              
              input {
                width: 40%;
-               height: 40px;
+               height: 35px;
                margin: 10px;
                border-radius: 5px;
              }
@@ -27,6 +27,7 @@ export const Container = styled.div`
 
              .idTask {
                width: 180px !important;
+               height: 30px !important;
              }
 
 
