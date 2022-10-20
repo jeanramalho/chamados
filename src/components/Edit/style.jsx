@@ -9,12 +9,14 @@ export const Container = styled.div`
                 width: 100%;
                 height: 100%;
                 background: #333;
+                display: flex;
+                flex-direction: row;
              }   
              
              input {
                width: 40%;
                height: 40px;
-               
+
              }
 
 
