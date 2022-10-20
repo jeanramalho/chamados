@@ -20,5 +20,14 @@ export const Container = styled.div`
                border-radius: 5px;
              }
 
+             select {
+               width: 180px;
+               height: 30px;
+             }
+
+             .idTask {
+               width: 180px !important;
+             }
+
 
 `
