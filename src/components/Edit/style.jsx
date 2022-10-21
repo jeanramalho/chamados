@@ -5,12 +5,15 @@ export const Container = styled.div`
             height: calc(100% - 80px);
             display: flex;
             
+            
              .editForm {
-                width: 100%;
+                width: 70%;
                 height: 100%;
                 background: #333;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
              }   
              
              input {
@@ -33,6 +36,8 @@ export const Container = styled.div`
              .divInfo1 {
               width: 100%;
               display: flex;
+              align-items: center;
+              justify-content: space-around;
              }
 
 
