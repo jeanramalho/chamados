@@ -16,7 +16,7 @@ export const Container = styled.div`
              }   
              
              input {
-               width: 40%;
+               width: 50%;
                height: 35px;
                margin: 10px;
                border-radius: 5px;
@@ -33,7 +33,7 @@ export const Container = styled.div`
              }
 
              .divInfo1 {
-              width: 100%;
+              width: 50%;
               display: flex;
               align-items: center;
               justify-content: space-around;
