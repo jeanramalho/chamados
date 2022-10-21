@@ -30,5 +30,10 @@ export const Container = styled.div`
                height: 30px !important;
              }
 
+             .divInfo1 {
+              width: 100%;
+              display: flex;
+             }
+
 
 `
