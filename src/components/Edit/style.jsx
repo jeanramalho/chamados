@@ -4,15 +4,14 @@ export const Container = styled.div`
             width: 100%;
             height: calc(100% - 80px);
             display: flex;
+            background: #333;
             
             
              .editForm {
                 width: 70%;
                 height: 100%;
-                background: #333;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
              }   
              
