@@ -17,7 +17,8 @@ function Edit(props){
                                 <option value="Media">Media</option>
                                 <option value="Baixa">Baixa</option>
                             </select>
-                        </div>                
+                        </div>         
+                        <textarea name="" id="" cols="30" rows="10"></textarea>       
                </div>       
                 
                  
