@@ -8,17 +8,16 @@ function Edit(props){
     return (
         <Container>
                 <List />
-               <div className="editForm">
-                    <input type="text" className="titleTask" />
-                    <div className='divInfo1'>
-                        <input type="text" className="idTask" />
-                        <select name="criticidade" id="" className="critTask">
-                            <option value="Alta">Alta</option>
-                            <option value="Media">Media</option>
-                            <option value="Baixa">Baixa</option>
-                        </select>
-                    </div>
-                   
+                    <div className="editForm">
+                        <input type="text" className="titleTask" />
+                        <div className='divInfo1'>
+                            <input type="text" className="idTask" />
+                            <select name="criticidade" id="" className="critTask">
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baixa">Baixa</option>
+                            </select>
+                        </div>                
                </div>       
                 
                  
