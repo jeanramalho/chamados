@@ -8,6 +8,7 @@ function Edit(props){
     return (
         <Container>
                 <List />
+
                <div className="editForm">
                     <input type="text" className="titleTask" />
                     <div className='divInfo1'>

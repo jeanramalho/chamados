@@ -39,5 +39,9 @@ export const Container = styled.div`
               justify-content: space-between;
              }
 
+             .descTask {
+               border-radius: 8px;
+             }
+
 
 `
