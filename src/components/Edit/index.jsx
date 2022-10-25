@@ -18,6 +18,9 @@ function Edit(props){
                             <option value="Baixa">Baixa</option>
                         </select>
                     </div>
+                    <div>
+                        <select name="status" id="statusTask"></select>
+                    </div>
                    
                </div>       
                 
