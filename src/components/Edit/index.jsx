@@ -24,6 +24,7 @@ function Edit(props){
                             <option value="Backlog">Backlog</option>
                             <option value="Em Andamento">Em Andamento</option>
                             <option value="Blocked">Blocked</option>
+                            <option value="Concluida">Concluida</option>
                         </select>
                     </div>
                    
