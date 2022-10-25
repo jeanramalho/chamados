@@ -22,6 +22,7 @@ function Edit(props){
                     <div>
                         <select name="status" id="statusTask">
                             <option value="Backlog">Backlog</option>
+                            <option value="Em Andamento">Em Andamento</option>
                         </select>
                     </div>
                    
