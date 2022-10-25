@@ -20,7 +20,9 @@ function Edit(props){
                         </select>
                     </div>
                     <div>
-                        <select name="status" id="statusTask"></select>
+                        <select name="status" id="statusTask">
+                            <option value="Backlog">Backlog</option>
+                        </select>
                     </div>
                    
                </div>       
