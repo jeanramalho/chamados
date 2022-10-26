@@ -37,7 +37,7 @@ function Edit(props){
                 <List />
 
                <div className="editForm">
-                    <input type="text" className="titleTask" />
+                    <input type="text" className="titleTask" value={chamado.title} />
                     <div className='divInfo1'>
                         <input type="text" className="idTask" value={chamado.taskId}/>
                         <select name="criticidade" id="" className="critTask">
