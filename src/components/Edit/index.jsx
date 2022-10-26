@@ -1,9 +1,35 @@
 import React from "react";
 import { Container } from "./style";
 import List from "../List"
+import { useParams } from 'react-router-dom'
+import { gql, useQuery } from '@apollo/client';
+
+const getTicketById = gql`
+    query MyQuery ($idTask: Int) {
+        chamado(where: {taskId: $idTask}) {
+        creater
+        createdAt
+        id
+        title
+        taskId
+        statusTicket
+        description
+        criticality
+        }
+    }
+`
 
 function Edit(props){
 
+    const { id } = useParams()
+    const { loading, error, data } = useQuery(getTicketById, {
+    variables: {
+      idTask: parseInt(id),
+    }
+  })
+  if (loading) return <p>Loading ...</p>
+
+  const chamado = data.chamado
     
     return (
         <Container>
