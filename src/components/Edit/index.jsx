@@ -27,9 +27,9 @@ function Edit(props){
                             <option value="Concluida">Concluida</option>
                         </select>
                     </div>
-                   
+                    <textarea name="descTaks" id="" cols="30" rows="10" className="descTask"></textarea>
                </div>       
-                <textarea name="descTaks" id="" cols="30" rows="10"></textarea>
+                
                  
         
         </Container>
