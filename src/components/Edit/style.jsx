@@ -42,6 +42,7 @@ export const Container = styled.div`
              .descTask {
                border-radius: 8px;
                width: 50%;
+               height: 40%;
                margin: 10px;
              }
 
