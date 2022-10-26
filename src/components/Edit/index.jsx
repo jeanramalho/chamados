@@ -56,7 +56,7 @@ function Edit(props){
                             <option value="Concluida">Concluida</option>
                         </select>
                     </div>
-                    <textarea name="descTaks" id="" cols="30" rows="10" className="descTask"></textarea>
+                    <textarea name="descTaks" id="" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
                </div>       
                 
                  
