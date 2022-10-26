@@ -30,7 +30,8 @@ function Edit(props){
   if (loading) return <p>Loading ...</p>
 
   const chamado = data.chamado
-    
+    console.log(chamado.taskId)
+
     return (
         <Container>
                 <List />
@@ -38,7 +39,7 @@ function Edit(props){
                <div className="editForm">
                     <input type="text" className="titleTask" />
                     <div className='divInfo1'>
-                        <input type="text" className="idTask" />
+                        <input type="text" className="idTask" value={chamado.taskId}/>
                         <select name="criticidade" id="" className="critTask">
                             <option value="Alta">Alta</option>
                             <option value="Media">Media</option>
