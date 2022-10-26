@@ -29,7 +29,7 @@ function Edit(props){
                     </div>
                    
                </div>       
-                
+                <textarea name="descTaks" id="" cols="30" rows="10"></textarea>
                  
         
         </Container>
