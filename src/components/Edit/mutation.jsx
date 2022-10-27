@@ -1,6 +1,8 @@
 import React from 'react';
 import { gql, useMutation, useQuery } from '@apollo/client';
 
+let 
+
 export const updateChamado = gql`
     mutation($description: String, $statusTicket: String, $title: String, $criticality: String, $taskId: Int ) {
         updateChamado(

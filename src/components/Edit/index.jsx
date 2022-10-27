@@ -3,6 +3,7 @@ import { Container } from "./style";
 import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery } from '@apollo/client';
+import { updateTask } from './editChamado'
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
@@ -37,10 +38,10 @@ function Edit(props){
                 <List />
 
                <div className="editForm">
-                    <input type="text" className="titleTask" value={chamado.title} />
+                    <input type="text" className="titleTask" value={chamado.title} id="title" />
                     <div className='divInfo1'>
-                        <input type="text" className="idTask" value={chamado.taskId} disabled/>
-                        <select name="criticidade" id="" className="critTask">
+                        <input type="text" id="Id" className="idTask" value={chamado.taskId} disabled/>
+                        <select id="crit" name="criticidade" id="" className="critTask">
                             <option value={chamado.criticality}>"{chamado.criticality}"</option>
                             <option value="Alta">Alta</option>
                             <option value="Media">Media</option>
@@ -56,7 +57,7 @@ function Edit(props){
                             <option value="Concluida">Concluida</option>
                         </select>
                     </div>
-                    <textarea name="descTaks" id="" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
+                    <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
                </div>       
                 
                  

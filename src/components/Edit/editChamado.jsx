@@ -2,7 +2,15 @@ import React from 'react';
 import { useMutation } from '@apollo/client';
 import { updateChamado } from './mutation';
 
-function updateTask(desc, status, title, crit, taskId) {
+function updateTask() {
+
+    let tit = document.getElementById('title').value
+    let id = document.getElementById('Id').value
+    let desc= document.getElementById('description').value
+    let criti = document.getElementById('crit').value
+    let status = document.getElementById('statusTask').value
+
+
     const [upChamado, {}] = useMutation(updateChamado)
     
         upChamado(
@@ -10,9 +18,9 @@ function updateTask(desc, status, title, crit, taskId) {
                 variables: {
                     description: desc,
                     statusTicket: status,
-                    title: title,
-                    criticality: crit,
-                    taskId: parseInt(taskId)
+                    title: tit,
+                    criticality: criti,
+                    taskId: parseInt(id)
                 }
             }
         )
