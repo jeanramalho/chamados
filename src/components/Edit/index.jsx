@@ -41,7 +41,7 @@ function Edit(props){
                     <input type="text" className="titleTask" value={chamado.title} id="title" />
                     <div className='divInfo1'>
                         <input type="text" id="Id" className="idTask" value={chamado.taskId} disabled/>
-                        <select id="crit" name="criticidade" id="" className="critTask">
+                        <select id="crit" name="criticidade" className="critTask">
                             <option value={chamado.criticality}>"{chamado.criticality}"</option>
                             <option value="Alta">Alta</option>
                             <option value="Media">Media</option>
