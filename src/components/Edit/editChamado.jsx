@@ -2,8 +2,12 @@ import React from 'react';
 import { useMutation } from '@apollo/client';
 import { updateChamado } from './mutation';
 
-function updateTask() {
 
+
+function UpdateTask() {
+
+    const [upChamado, {}] = useMutation(updateChamado)
+    
     let tit = document.getElementById('title').value
     let id = document.getElementById('Id').value
     let desc= document.getElementById('description').value
@@ -11,7 +15,7 @@ function updateTask() {
     let status = document.getElementById('statusTask').value
 
 
-    const [upChamado, {}] = useMutation(updateChamado)
+    
     
         upChamado(
             {
@@ -24,6 +28,8 @@ function updateTask() {
                 }
             }
         )
+
+        return alert(`Chamado ${id} foi atualizado com sucesso!`)
 }
 
-export default updateTask
+export default UpdateTask

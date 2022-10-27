@@ -3,7 +3,7 @@ import { Container } from "./style";
 import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery } from '@apollo/client';
-import { updateTask } from './editChamado'
+import  UpdateTask  from './editChamado'
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
