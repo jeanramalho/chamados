@@ -2,8 +2,8 @@ import React from "react";
 import { Container } from "./style";
 import List from "../List"
 import { useParams } from 'react-router-dom'
-import { gql, useQuery } from '@apollo/client';
-import  UpdateTask  from './editChamado'
+import { gql, useQuery, useMutation } from '@apollo/client';
+import { updateChamado } from './mutation';
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
@@ -32,6 +32,11 @@ function Edit(props){
 
   const chamado = data.chamado
     console.log(chamado.taskId)
+
+
+
+
+
 
     return (
         <Container>
