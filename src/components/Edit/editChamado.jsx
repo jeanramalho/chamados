@@ -15,7 +15,7 @@ function UpdateTask() {
     let status = document.getElementById('statusTask').value
 
 
-    function atualizar() {
+    
         upChamado(
             {
                 variables: {
@@ -27,9 +27,7 @@ function UpdateTask() {
                 }
             }
         )
-    }
     
-        atualizar()
 
         return alert(`Chamado ${id} foi atualizado com sucesso!`)
 }
