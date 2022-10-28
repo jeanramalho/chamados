@@ -4,6 +4,7 @@ import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery, useMutation } from '@apollo/client';
 import { updateChamado } from './mutation';
+import { upChamado } from './editChamado'
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
@@ -35,7 +36,7 @@ function Edit(props){
 
    
 
-        const [upChamado, {}] = useMutation(updateChamado)
+        
         
         let tit = document.getElementById('title').value
         let idChamado = document.getElementById('Id').value
