@@ -44,8 +44,20 @@ function Edit(props){
         let criti = document.getElementById('crit').value
         let status = document.getElementById('statusTask').value
         
-    
-       
+    function atualiza(){
+        upChamado(
+            {
+                variables: {
+                    description: desc,
+                    statusTicket: status,
+                    title: tit,
+                    criticality: criti,
+                    taskId: parseInt(idChamado)
+                }
+            }
+        )
+    }
+        
 
 
 
@@ -76,17 +88,7 @@ function Edit(props){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ upChamado(
-                {
-                    variables: {
-                        description: desc,
-                        statusTicket: status,
-                        title: tit,
-                        criticality: criti,
-                        taskId: parseInt(idChamado)
-                    }
-                }
-            )}>Salvar</button>
+                    <button onClick={ }>Salvar</button>
                </div>       
                 
                  
