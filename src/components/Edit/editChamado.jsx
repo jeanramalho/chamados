@@ -5,6 +5,18 @@ import { updateChamado } from './mutation';
 function UpdateTask(){
 
     const [upChamado, {}] = useMutation(updateChamado)
+
+    upChamado(
+        {
+            variables: {
+                description: desc,
+                statusTicket: status,
+                title: tit,
+                criticality: criti,
+                taskId: parseInt(idChamado)
+            }
+        }
+    )
 }
 
 

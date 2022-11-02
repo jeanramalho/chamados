@@ -44,19 +44,7 @@ function Edit(props){
         let criti = document.getElementById('crit').value
         let status = document.getElementById('statusTask').value
         
-    function atualiza(){
-        upChamado(
-            {
-                variables: {
-                    description: desc,
-                    statusTicket: status,
-                    title: tit,
-                    criticality: criti,
-                    taskId: parseInt(idChamado)
-                }
-            }
-        )
-    }
+    
         
 
 
