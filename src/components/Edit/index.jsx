@@ -88,7 +88,7 @@ function Edit(props){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ }>Salvar</button>
+                    <button onClick={ atualiza }>Salvar</button>
                </div>       
                 
                  
