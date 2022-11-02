@@ -2,7 +2,7 @@ import React from 'react';
 import { gql, useQuery, useMutation } from '@apollo/client';
 import { updateChamado } from './mutation';
 
-function UpdateTask(){
+function UpdateTask(desc, status, tit, criti, idChamado){
 
     const [upChamado, {}] = useMutation(updateChamado)
 

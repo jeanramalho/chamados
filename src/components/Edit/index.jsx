@@ -4,7 +4,7 @@ import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery, useMutation } from '@apollo/client';
 import { updateChamado } from './mutation';
-import { upChamado } from './editChamado'
+import { UpdateTask } from './editChamado'
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
@@ -32,11 +32,6 @@ function Edit(props){
   if (loading) return <p>Loading ...</p>
 
   const chamado = data.chamado
-    console.log(chamado.taskId)
-
-   
-
-        
         
         let tit = document.getElementById('title').value
         let idChamado = document.getElementById('Id').value
@@ -76,7 +71,7 @@ function Edit(props){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ atualiza }>Salvar</button>
+                    <button onClick={ UpdateTask(desc, status, tit, criti, idChamado) }>Salvar</button>
                </div>       
                 
                  
