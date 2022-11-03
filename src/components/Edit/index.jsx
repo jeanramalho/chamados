@@ -3,7 +3,6 @@ import { Container } from "./style";
 import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery, useMutation } from '@apollo/client';
-import { updateChamado } from './mutation';
 import  UpdateTask  from './editChamado'
 
 const getTicketById = gql`
