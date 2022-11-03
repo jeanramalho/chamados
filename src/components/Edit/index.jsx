@@ -3,7 +3,9 @@ import { Container } from "./style";
 import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery, useMutation } from '@apollo/client';
-import  UpdateTask  from './editChamado'
+import { gql, useQuery, useMutation } from '@apollo/client';
+import { updateChamado } from './mutation';
+
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
@@ -21,6 +23,34 @@ const getTicketById = gql`
 `
 
 function Edit(props){
+
+    
+
+function UpdateTask(){
+
+
+    let tit = document.getElementById('title').value
+    let idChamado = document.getElementById('Id').value
+    let desc= document.getElementById('description').value
+    let criti = document.getElementById('crit').value
+    let status = document.getElementById('statusTask').value
+
+    const [upChamado, {}] = useMutation(updateChamado)
+
+    upChamado(
+        {
+            variables: {
+                description: desc,
+                statusTicket: status,
+                title: tit,
+                criticality: criti,
+                taskId: parseInt(idChamado)
+            }
+        }
+    )
+
+    return alert("Chamado atualizado com sucesso")
+}
 
     const { id } = useParams()
     const { loading, error, data } = useQuery(getTicketById, {
@@ -41,7 +71,7 @@ function Edit(props){
 
     return (
         <Container>
-                <List key={idChamado}/>
+                <List />
 
                <div className="editForm">
                     <input type="text" className="titleTask" value={chamado.title} id="title" />
@@ -65,7 +95,7 @@ function Edit(props){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ UpdateTask }>Salvar</button>
+                    <button onClick={ UpdateTask() }>Salvar</button>
                </div>       
                 
                  
