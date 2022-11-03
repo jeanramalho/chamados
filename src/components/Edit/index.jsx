@@ -32,11 +32,6 @@ function Edit(props){
 
   const chamado = data.chamado
         
-        let tit = document.getElementById('title').value
-        let idChamado = document.getElementById('Id').value
-        let desc= document.getElementById('description').value
-        let criti = document.getElementById('crit').value
-        let status = document.getElementById('statusTask').value
         
     
         
@@ -46,7 +41,7 @@ function Edit(props){
 
     return (
         <Container>
-                <List />
+                <List key={idChamado}/>
 
                <div className="editForm">
                     <input type="text" className="titleTask" value={chamado.title} id="title" />
@@ -70,7 +65,7 @@ function Edit(props){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ UpdateTask(desc, status, tit, criti, idChamado) }>Salvar</button>
+                    <button onClick={ UpdateTask }>Salvar</button>
                </div>       
                 
                  
