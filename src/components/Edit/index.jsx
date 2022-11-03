@@ -21,11 +21,26 @@ const getTicketById = gql`
     }
 `
 
+
+
 function Edit(props){
 
     
 
-function UpdateTask(){
+
+
+    const { id } = useParams()
+    const { loading, error, data } = useQuery(getTicketById, {
+    variables: {
+      idTask: parseInt(id),
+    }
+  })
+  if (loading) return <p>Loading ...</p>
+
+  const chamado = data.chamado
+        
+  
+  function UpdateTask(){
 
 
     let tit = document.getElementById('title').value
@@ -50,19 +65,6 @@ function UpdateTask(){
 
     return alert("Chamado atualizado com sucesso")
 }
-
-    const { id } = useParams()
-    const { loading, error, data } = useQuery(getTicketById, {
-    variables: {
-      idTask: parseInt(id),
-    }
-  })
-  if (loading) return <p>Loading ...</p>
-
-  const chamado = data.chamado
-        
-        
-    
         
 
 
@@ -94,7 +96,7 @@ function UpdateTask(){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ UpdateTask() }>Salvar</button>
+                    <button onClick={ UpdateTask }>Salvar</button>
                </div>       
                 
                  
