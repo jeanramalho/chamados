@@ -4,7 +4,7 @@ import List from "../List"
 import { useParams } from 'react-router-dom'
 import { gql, useQuery, useMutation } from '@apollo/client';
 import { updateChamado } from './mutation';
-import { upChamado } from './editChamado'
+
 
 const getTicketById = gql`
     query MyQuery ($idTask: Int) {
@@ -21,7 +21,13 @@ const getTicketById = gql`
     }
 `
 
+
+
 function Edit(props){
+
+    
+
+
 
     const { id } = useParams()
     const { loading, error, data } = useQuery(getTicketById, {
@@ -32,20 +38,34 @@ function Edit(props){
   if (loading) return <p>Loading ...</p>
 
   const chamado = data.chamado
-    console.log(chamado.taskId)
+        
+  
+  function UpdateTask(){
 
-   
 
+    let tit = document.getElementById('title').value
+    let idChamado = document.getElementById('Id').value
+    let desc= document.getElementById('description').value
+    let criti = document.getElementById('crit').value
+    let status = document.getElementById('statusTask').value
+
+    const [upChamado, {}] = useMutation(updateChamado)
+
+    upChamado(
+        {
+            variables: {
+                description: desc,
+                statusTicket: status,
+                title: tit,
+                criticality: criti,
+                taskId: parseInt(idChamado)
+            }
+        }
+    )
+
+    return alert("Chamado atualizado com sucesso")
+}
         
-        
-        let tit = document.getElementById('title').value
-        let idChamado = document.getElementById('Id').value
-        let desc= document.getElementById('description').value
-        let criti = document.getElementById('crit').value
-        let status = document.getElementById('statusTask').value
-        
-    
-       
 
 
 
@@ -76,17 +96,7 @@ function Edit(props){
                     </div>
                     <textarea name="descTaks" id="description" cols="30" rows="10" className="descTask" value={chamado.description}></textarea>
 
-                    <button onClick={ upChamado(
-                {
-                    variables: {
-                        description: desc,
-                        statusTicket: status,
-                        title: tit,
-                        criticality: criti,
-                        taskId: parseInt(idChamado)
-                    }
-                }
-            )}>Salvar</button>
+                    <button onClick={ UpdateTask }>Salvar</button>
                </div>       
                 
                  
