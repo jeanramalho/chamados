@@ -25,10 +25,6 @@ const getTicketById = gql`
 
 function Edit(props){
 
-    
-
-
-
     const { id } = useParams()
     const { loading, error, data } = useQuery(getTicketById, {
     variables: {
