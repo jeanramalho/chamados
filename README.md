@@ -4,3 +4,6 @@ Esta aplicação foi pensada para uso interno de uma empresa, onde será possív
 
 ## Instalação
 
+ Para iniciar instalação do ambiente use o comando:
+  * npm install
+
