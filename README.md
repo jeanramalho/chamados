@@ -7,6 +7,8 @@ Esta aplicação foi pensada para uso interno de uma empresa, onde será possív
  Para iniciar instalação do ambiente use o comando:
   * npm install
 
+## Utilização
+
  Para iniciar o ambiente utilize o comando:
   * npm start
 
