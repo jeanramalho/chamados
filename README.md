@@ -12,3 +12,4 @@ Esta aplicação foi pensada para uso interno de uma empresa, onde será possív
  Para iniciar o ambiente utilize o comando:
   * npm start
 
+
